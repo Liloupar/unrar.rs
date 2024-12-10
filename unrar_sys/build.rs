@@ -82,6 +82,8 @@ fn main() {
         .define("_LARGEFILE_SOURCE", None)
         .define("RAR_SMP", None)
         .define("RARDLL", None)
+        .define("__USE_GNU", None)
+        .define("__ANDROID_API__", Some("26"))      
         .files(&files)
         .compile("libunrar.a");
 }
