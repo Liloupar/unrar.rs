@@ -6,7 +6,7 @@ fn main() {
             println!("cargo:rustc-link-lib=pthread");
         }
     } else {
-        println!("cargo:rustc-link-lib=pthread");
+        // println!("cargo:rustc-link-lib=pthread");
     }
     let files: Vec<String> = [
         "strlist",
